@@ -36,6 +36,13 @@ def resume():
     return render_template('resume.html')
 
 ''' 
+Blog post page
+'''
+@server.route('/post', methods=['GET'])
+def post():
+    return render_template('post.html')
+
+''' 
 Picture gallery pages.
 '''
 
