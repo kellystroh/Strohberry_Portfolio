@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Strohberry Post</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+
+	<!-- Font -->
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+
+	<link href="static/css/bootstrap.css" rel="stylesheet">
+
+	<link href="static/css/ionicons.css" rel="stylesheet">
+
+
+	<link href="static/css/post-styles.css" rel="stylesheet">
+
+	<link href="static/css/post-responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<header>
+		<div class="middle-menu center-text"><a href="" class="logo"><img src="static/images/strohblog.jpg" alt="Logo Image"></a></div>
+		<div class="bottom-area">
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+			<ul class="main-menu visible-on-click" id="main-menu">
+				<li><a href="/">HOME</a></li>
+				<li><a href="/career">THE PROFESSIONAL</a></li>
+				<li><a href="/hobbies">THE ARTISAN</a></li>
+				<li><a href="/travel">THE EXPLORER</a></li>
+			</ul><!-- main-menu -->
+		</div><!-- container -->
+	</header>
+
+	<section class="blog-area">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-8 col-md-12">
+					<div class="blog-posts">
+
+						<div class="single-post">
+							<div class="image-wrapper"><img src={{img1}} alt="Blog Image"></div>
+							<p class="date"><em>{{cred1}}</em></p>
+							<div class="icons">
+								<div class="left-area">
+									<a class="btn caegory-btn" href="#"><b>{{category}}</b></a>
+								</div>
+								<!-- <ul class="right-area social-icons">
+									<li><a href="#"><i class="ion-android-share-alt"></i>Share</a></li>
+									<li><a href="#"><i class="ion-android-favorite-outline"></i>03</a></li>
+									<li><a href="#"><i class="ion-android-textsms"></i>06</a></li>
+								</ul> -->
+							</div>
+							
+							<h3 class="title"><a href="#"><b class="light-color">{{ title }}</b></a></h3>
+							<p class="desc">{{content1}}</p>
+
+							<!-- <h5 class="quoto"><em><i class="ion-quote"></i>Eerror sit voluptatem accusantium doloremque
+								 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+								 architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+								 consectetur, adipisci velit
+							</em></h5> -->
+							<h4 class="title"><a href="#"><b class="light-color">Part 1</b></a></h4>
+							<h6> Step 1: Just decide to show up. 
+								<br>
+								Step 2: Show up. </h6>
+								<br> <br> 
+								<p>
+								If you aren't an introvert, your first step will be to choose a group or a specific 
+								event to attend. However, in my experience, it doesn't matter what your first couple 
+								events are, or if the events don't facilitate future connections. Overcoming my aversion 
+								to these unfamiliar social situations required practice. <br> <br> Practice didn't cure the root 
+								of my aversion, but it gave me enough first-hand (yet anecdotal) evidence that the benefits 
+								outweigh the costs. On rare occasions, I leave an event feeling that I didn't gain anything 
+								by going. Even so, I have yet to regret going because I have come to strongly believe that 
+								you can't predict ahead of time which events will be great (but I will still write a post 
+								to help you try). 
+								 <br><br>
+								As for the costs, they aren't as big as they seem.  Sometimes, I am awkward.
+								A couple weeks ago, I delayed two people's departure from the meetup with a very unnecessary 
+								tangent about sheep farming in Iceland. Sometimes, I don't talk to any new people, even though 
+								I spend time coaching myself to do just that. The only consequence, other than cringing in 
+								retrospect, is that I have to work on new strategies to appear less awkward than I am at heart. 
+								</p>
+								<br>
+								<div class="image-wrapper"><img src= {{img2}} alt="Blog Image"></div>
+								<p class="date"><em>{{cred2}}</em></p>
+								<br>
+								<p>
+								If your life doesn't present you with obstacles that provide reasonable excuses to skip an evening 
+								of networking, than I am jealous. The likelihood is that if you don't love the idea of networking, 
+								your brain will come up with legitimate excuses not to do it. If your brain is stubborn, then the 
+								excuses will be (or seem) very good. My only advice is this: go anyways. Set goals that are reasonable 
+								for yourself, and set a maximum number of excuses. I try to go to 2 - 3 events every week. One week 
+								of the month, I let myself go to just 1. This isn't practical for everyone, so set your own agenda. 
+								Just make sure you are on the winning end of the battle between goals and excuses not to meet your 
+								goals. </p>
+								<br>
+
+								
+
+
+							
+
+							
+							<ul>
+								{% for x in range(0, len) %}
+								<li><a class="btn" href="">{{tags[x]}}</a></li>
+								<!-- <li><a class="btn" href="#">fashion</a></li> -->
+								{%endfor%} 
+							</ul>
+							
+						</div><!-- single-post -->
+
+					</div><!-- blog-posts -->
+				</div><!-- col-lg-4 -->
+
+
+				<div class="col-lg-4 col-md-12">
+					<div class="sidebar-area">
+
+						<div class="sidebar-section about-author center-text">
+							<div class="author-image"><img src="static/images/kelly-luna.jpg" alt="Autohr Image"></div>
+
+							<div class="author-info">
+								<h4 class="name"><b class="light-color">Kelly Stroh</b></h4>
+
+								<p>Hello there, my name is Kelly Stroh. I am a data scientist, an economist, 
+									and an environmental scientist. I am also a crafter, a baker, a gardener, 
+									and a DIY dabbler. </p>
+
+								<ul class="social-icons">
+									<li><a href="https://github.com/kellystroh"><i class="ion-social-github-outline"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/kelly-stroh"><i class="ion-social-linkedin-outline"></i></a></li>
+									<li><a href="https://twitter.com/str0hberry"><i class="ion-social-twitter-outline"></i></a></li>
+									<li><a href="https://www.instagram.com/strohb3rry/"><i class="ion-social-instagram-outline"></i></a></li>
+									<li><a href="https://www.pinterest.com/strohski3/"><i class="ion-social-pinterest-outline"></i></a></li>
+								</ul><!-- right-area -->
+
+							</div><!-- author-info -->
+
+						</div><!-- sidebar-section about-author -->
+
+						<!-- <div class="sidebar-section src-area">
+
+							<form action="post">
+								<input class="src-input" type="text" placeholder="Search">
+								<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+							</form>
+
+						</div>sidebar-section src-area -->
+
+						<!-- <div class="sidebar-section newsletter-area">
+							<h5 class="title"><b>Subscribe to our newsletter</b></h5>
+							<form action="post">
+								<input class="email-input" type="text" placeholder="Your email here">
+								<button class="btn btn-2" type="submit">SUBSCRIBE</button>
+							</form>
+						</div>sidebar-section newsletter-area -->
+
+						<div class="sidebar-section category-area">
+							<h4 class="title"><b class="light-color">Categories</b></h4>
+							<a class="category" href="/career">
+								<img src="static/images/cat3.png" alt="Category Image">
+								<h6 class="name">DATA SCIENCE</h6>
+							</a>
+							<a class="category" href="/blog">
+								<img src="static/images/cat5.jpg" alt="Category Image">
+								<h6 class="name"> TECH COMMUNITY</h6>
+							</a>
+							<!-- <a class="category" href="#">
+								<img src="static/images/cat4.jpg" alt="Category Image">
+								<h6 class="name">LEARNING</h6>
+							</a> -->
+							<a class="category" href="/hobbies">
+								<img src="static/images/cat6.jpg" alt="Category Image">
+								<h6 class="name">HOBBIES</h6>
+							</a>
+							<a class="category" href="/travel">
+								<img src="static/images/cat7.jpg" alt="Category Image">
+								<h6 class="name">TRAVEL</h6>
+							</a>
+							<a class="category" href="/blog">
+								<img src="static/images/cat2.jpg" alt="Category Image">
+								<h6 class="name">MISCELLANY</h6>
+							</a>
+						</div><!-- sidebar-section category-area -->
+
+						<!-- <div class="sidebar-section latest-post-area">
+							<h4 class="title"><b class="light-color">Latest Posts</b></h4>
+
+							<div class="latest-post" href="#">
+								<div class="l-post-image"><img src="static/images/recent-post-1-150x200.jpg" alt="Category Image"></div>
+								<div class="post-info">
+									<a class="btn category-btn" href="#">TRAVEL</a>
+									<h5><a href="#"><b class="light-color">One more night in the clubs</b></a></h5>
+									<h6 class="date"><em>Monday, October 13, 2017</em></h6>
+								</div>
+							</div>
+
+							<div class="latest-post" href="#">
+								<div class="l-post-image"><img src="static/images/recent-post-2-150x200.jpg" alt="Category Image"></div>
+								<div class="post-info">
+									<a class="btn category-btn" href="#">TRAVEL</a>
+									<h5><a href="#"><b class="light-color">Travel lights in winter</b></a></h5>
+									<h6 class="date"><em>Monday, October 13, 2017</em></h6>
+								</div>
+							</div>
+							<div class="latest-post" href="#">
+								<div class="l-post-image"><img src="static/images/recent-post-3-150x200.jpg" alt="Category Image"></div>
+								<div class="post-info">
+									<a class="btn category-btn" href="#">TRAVEL</a>
+									<h5><a href="#"><b class="light-color">How to travel with no money</b></a></h5>
+									<h6 class="date"><em>Monday, October 13, 2017</em></h6>
+								</div>
+							</div>
+
+							<div class="latest-post" href="#">
+								<div class="l-post-image"><img src="static/images/recent-post-4-150x200.jpg" alt="Category Image"></div>
+								<div class="post-info">
+									<a class="btn category-btn" href="#">TRAVEL</a>
+									<h5><a href="#"><b class="light-color">Smile 10 times a day</b></a></h5>
+									<h6 class="date"><em>Monday, October 13, 2017</em></h6>
+								</div>
+							</div>
+
+						</div>sidebar-section latest-post-area -->
+
+						<!-- <div class="sidebar-section advertisement-area">
+							<h4 class="title"><b class="light-color">Advertisement</b></h4>
+							<a class="advertisement-img" href="#">
+								<img src="static/images/advertise-1-400x500.jpg" alt="Advertisement Image">
+								<h6 class="btn btn-2 discover-btn">DISCOVER</h6>
+							</a>
+						</div>sidebar-section advertisement-area -->
+
+						<!-- <div class="sidebar-section instagram-area">
+							<h4 class="title"><b class="light-color">Instagram</b></h4>
+							<ul class="instagram-img">
+								<li><a href="#"><img src="static/images/instragram-side-1-150x150.jpg" alt="Instagram Image"></a></li>
+								<li><a href="#"><img src="static/images/instragram-side-2-150x150.jpg" alt="Instagram Image"></a></li>
+								<li><a href="#"><img src="static/images/instragram-side-3-150x150.jpg" alt="Instagram Image"></a></li>
+								<div class="clearfix"></div>
+								<li><a href="#"><img src="static/images/instragram-side-4-150x150.jpg" alt="Instagram Image"></a></li>
+								<li><a href="#"><img src="static/images/instragram-side-5-150x150.jpg" alt="Instagram Image"></a></li>
+								<li><a href="#"><img src="static/images/instragram-side-6-150x150.jpg" alt="Instagram Image"></a></li>
+							</ul>
+						</div>sidebar-section instagram-area -->
+
+						<div class="sidebar-section tags-area">
+							<h4 class="title"><b class="light-color">Tags</b></h4>
+							<ul class="tags">
+								<li><a class="btn" href="">projects</a></li>
+								<li><a class="btn" href="">learning</a></li>
+								<li><a class="btn" href="">bootcamping</a></li>
+								<li><a class="btn" href="">hobbies</a></li>
+								<li><a class="btn" href="">community</a></li>
+								<li><a class="btn" href="">travel</a></li>
+								<li><a class="btn" href="">interests</a></li>
+								<li><a class="btn" href="">soccer</a></li>
+								<li><a class="btn" href="">nature</a></li>
+								<li><a class="btn" href="">crafting</a></li>
+								<li><a class="btn" href="">baking</a></li>
+							</ul>
+						</div><!-- sidebar-section tags-area -->
+
+
+					</div><!-- about-author -->
+				</div><!-- col-lg-4 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+
+
+	<!-- <section class="footer-instagram-area">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h5 class="title"><b class="light-color">Follow me &copy; instagram</b></h5>
+				</div>col-lg-4 -->
+			<!-- </div>row -->
+		<!-- </div>container -->
+
+		<!-- <ul class="instagram">
+			<li><a href="#"><img src="static/images/instragram-1-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-2-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-3-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-4-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-5-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-6-300x400.jpg" alt="Instagram Image"></a></li>
+			<li><a href="#"><img src="static/images/instragram-7-300x400.jpg" alt="Instagram Image"></a></li>
+		</ul>
+	</section>section -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<div class="footer-section">
+						<p class="copyright">Juli &copy; 2018. All rights reserved. | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-sm-6">
+					<div class="footer-section">
+						<ul class="social-icons">
+							<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+						</ul>
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</footer>
+
+
+	<!-- SCIPTS -->
+
+	<script src="static/js/jquery-3.1.1.min.js"></script>
+
+	<script src="static/js/tether.min.js"></script>
+
+	<script src="static/js/bootstrap.js"></script>
+
+	<script src="static/js/scripts.js"></script>
+
+</body>
+</html>

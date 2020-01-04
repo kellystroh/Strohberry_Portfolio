@@ -77,10 +77,10 @@ def post2():
 @server.route('/post-3', methods=['GET'])
 def post3():
     post_dict = {'id': 3,
-                'title': "An Introvert's Guide to Networking (Part 1)",
+                'title': "An Introvert's Guide to Networking",
                 'content1': "Just the thought of 'Networking' makes me uncomfortable. I (unfairly) associate it with huge crowds of schmoozers having disingenuous interactions motivated by self-interest. Coming from the nonprofit/government sector, where I got interviews for 80 percent of online applications I submitted, I have never felt so much pressure to network. As the title implies, I plan to write a series of posts with suggestions for anyone else who fears networking, but is determined to do it anyway. I am not an expert in networking, but I have 30 years of experience in introverting. Perhaps these will balance out to yield some practical advice. If not, tell me what you think!", 
                 'content2': "So… Meetups.  I have been actively exploring Seattle's tech meetups for three months, since mid-September 2019. I've heard the same advice from several different people, so it's probably worth noting. 'It's better to attend a few groups regularly than to attend many different groups once.' I'd rate this as 95 percent accurate. I follow the spirit of the advice. I am a regular at PuPPy & Data Circles, which is the new name of Seattle Women in Data Science (SeaWiDS). However, I follow 56 tech groups on the Meetup app. I've also been to events hosted by at least 12 of them. Some of the best events I've attended have been by groups that haven't hosted anything else since. I could (and will) write a blog about what factors I think contribute to a 'great' event, but the current point is that there are a number of advantages to casting a wide net when looking for events to attend.", 
-                'category': "Miscellany",
+                'category': "Tech Community",
                 'img1': "static/images/introvert.png",
                 'cred1': "Photo by Urban Threads",
                 'img2': "static/images/work_stock12.jpg",
@@ -88,6 +88,20 @@ def post3():
                 'tags': ["blog", "data science", "community"] ,
                 'len': 3}
     return render_template('post3.html', **post_dict)
+
+@server.route('/post-4', methods=['GET'])
+def post4():
+    post_dict = {'id': 4,
+                'title': "An Introvert's Guide to Networking",
+                'content1': "Just the thought of 'Networking' makes me uncomfortable. I (unfairly) associate it with huge crowds of schmoozers having disingenuous interactions motivated by self-interest. Coming from the nonprofit/government sector, where I got interviews for 80 percent of online applications I submitted, I have never felt so much pressure to network. As the title implies, I plan to write a series of posts with suggestions for anyone else who fears networking, but is determined to do it anyway. I am not an expert in networking, but I have 30 years of experience in introverting. Perhaps these will balance out to yield some practical advice. If not, tell me what you think!", 
+                'category': "Tech Community",
+                'img1': "static/images/introvert.png",
+                'cred1': "Photo by Urban Threads",
+                'img2': "static/images/sheep.jpg",
+                'cred2': "Photo by Kasper Lau on Unsplash",
+                'tags': ["blog", "data science", "community"] ,
+                'len': 3}
+    return render_template('introvert.html', **post_dict)
 
 ''' 
 Picture gallery pages.
