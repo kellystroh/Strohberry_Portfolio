@@ -35,7 +35,7 @@
 'img2': "static/images/work_stock12.jpg",
 'cred2': "Image by Александар Цветановић on Pexels",
 'tags': ["blog", "hobbies", "interests"] ,
-'len': 2
+'len': 3
 }
 
 
