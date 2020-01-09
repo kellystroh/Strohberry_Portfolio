@@ -103,6 +103,13 @@ def post4():
                 'len': 3}
     return render_template('introvert.html', **post_dict)
 
+'''
+Game
+'''
+@server.route('/word_ladder', methods=['GET'])
+def ladder():
+    return redirect(http://ec2-3-134-113-48.us-east-2.compute.amazonaws.com)
+
 ''' 
 Picture gallery pages.
 '''
