@@ -108,7 +108,7 @@ Game
 '''
 @server.route('/word_ladder', methods=['GET'])
 def ladder():
-    return redirect(http://ec2-3-134-113-48.us-east-2.compute.amazonaws.com)
+    return redirect('http://ec2-3-134-113-48.us-east-2.compute.amazonaws.com')
 
 ''' 
 Picture gallery pages.
