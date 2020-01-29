@@ -33,7 +33,7 @@ Resume page
 
 @server.route('/resume', methods=['GET'])
 def resume():
-    return render_template('resume.html')
+    return render_template('Stroh_resume.html')
 
 ''' 
 Blog post pages:
