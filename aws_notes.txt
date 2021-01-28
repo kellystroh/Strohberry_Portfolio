@@ -1,0 +1,8 @@
+ssh sf
+
+scp *file* sf:Strohberry_Portfolio
+
+tmux ls
+
+tmux kill-ses -t *session_name*
+
